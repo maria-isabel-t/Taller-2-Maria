@@ -5,7 +5,7 @@ Created on Sat May 18 17:01:23 2024
 
 @author: mitirado
 """
-
+import pandas as pd
 import pulp as lp
 
 #Variables de decisión
@@ -18,7 +18,7 @@ w6 = lp.LpVariable("Precio sombra de la demanda de helado de fresa",0,None,lp.Lp
 w7 = lp.LpVariable("Precio sombra de la demanda de helado de chocolate",0,None,lp.LpContinuous)
 
 #Crear el problema
-prob = lp.LpProblem("Problema Dual",lp.LpMaximize)
+prob = lp.LpProblem("Problema PRINCIPAL ",lp.LpMaximize)
 
 #Restricciones
 
