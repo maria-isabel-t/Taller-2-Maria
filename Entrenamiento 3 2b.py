@@ -73,3 +73,5 @@ for i in prob.variables():
 print("Costo Total: ",lp.value(prob.objective))
 
 print("taller analitica")
+
+print ("prueba github")
